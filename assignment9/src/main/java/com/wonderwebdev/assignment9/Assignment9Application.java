@@ -16,7 +16,7 @@ import org.springframework.context.annotation.ComponentScan;
 public class Assignment9Application {
 	
 	public static void main(String[] args) throws IOException {
-		SpringApplication.run(assignment9Application.class, args);
+		SpringApplication.run(Assignment9Application.class, args);
 		
 		// example of how to parse a CSV file 
 		Reader in = new FileReader("recipes.txt");
