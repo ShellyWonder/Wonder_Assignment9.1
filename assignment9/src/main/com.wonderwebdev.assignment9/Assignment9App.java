@@ -13,10 +13,10 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan("com.wonderwebdev.assignment9")
-public class Assignment9Application {
+public class Assignment9App {
 	
 	public static void main(String[] args) throws IOException {
-		SpringApplication.run(Assignment9Application.class, args);
+		SpringApplication.run(Assignment9App.class, args);
 		
 		// example of how to parse a CSV file 
 		Reader in = new FileReader("recipes.txt");
