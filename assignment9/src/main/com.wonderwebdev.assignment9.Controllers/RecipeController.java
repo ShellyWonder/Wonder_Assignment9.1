@@ -7,8 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RecipeController {
 
-    @Autowired
     private RecipeService recipeService;
+
+    private RecipeController(RecipeService recipeService) {
+        this.recipeService = recipeService;
+    }
 
     @GetMapping("/gluten-free")
     public List<Recipe> getGlutenFreeRecipes() {
