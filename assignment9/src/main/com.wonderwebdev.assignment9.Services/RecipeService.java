@@ -1,5 +1,1 @@
-package com.wonderwebdev.assignment9.Services;
-
-public class RecipeService {
-    
-}
+package com.wonderwebdev.assignment9.services;
