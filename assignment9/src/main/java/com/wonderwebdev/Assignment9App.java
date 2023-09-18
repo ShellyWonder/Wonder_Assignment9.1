@@ -1,4 +1,4 @@
-package com.wonderwebdev.assignment9;
+package com.wonderwebdev;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

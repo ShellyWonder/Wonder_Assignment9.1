@@ -1,4 +1,4 @@
-package com.wonderwebdev.assignment9;
+package com.wonderwebdev.assignment9.interfaces;
 
 public interface RecipeServiceImp {
 

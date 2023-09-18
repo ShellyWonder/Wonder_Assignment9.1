@@ -1,11 +1,11 @@
-package com.wonderwebdev.assignment9.services;
+package com.wonderwebdev.services.recipeService;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.wonderwebdev.assignment9.RecipeServiceImp;
-import com.wonderwebdev.assignment9.domain;
+import com.wonderwebdev.RecipeServiceImp;
+import com.wonderwebdev.domain.Recipe;
 
 @Service
 public class RecipeService extends RecipeServiceImp {

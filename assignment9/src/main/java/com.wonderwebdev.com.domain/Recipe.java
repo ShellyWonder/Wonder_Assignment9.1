@@ -1,4 +1,4 @@
-package com.wonderwebdev.assignment9.domain;
+package com.wonderwebdev.assignment9;
 
 public class Recipe {
   private Integer cookingMinutes;
