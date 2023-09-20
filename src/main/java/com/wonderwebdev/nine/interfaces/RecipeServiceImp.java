@@ -1,4 +1,7 @@
-package com.wonderwebdev.assignment9.interfaces;
+package com.wonderwebdev.nine.interfaces;
+
+import java.util.List;
+import com.wonderwebdev.nine.domain.Recipe;
 
 public interface RecipeServiceImp {
 

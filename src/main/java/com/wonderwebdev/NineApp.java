@@ -12,11 +12,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan("com.wonderwebdev.assignment9")
-public class Assignment9App {
+@ComponentScan("com.wonderwebdev.nine")
+public class NineApp {
 	
 	public static void main(String[] args) throws IOException {
-		SpringApplication.run(Assignment9App.class, args);
+		SpringApplication.run(NineApp.class, args);
 		
 		// example of how to parse a CSV file 
 		Reader in = new FileReader("recipes.txt");

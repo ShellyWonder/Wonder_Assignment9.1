@@ -1,10 +1,10 @@
-package com.wonderwebdev.assignment9;
+package com.wonderwebdev.nine;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Assignment9ApplicationTests {
+class NineApplicationTests {
 
 	@Test
 	void contextLoads() {
