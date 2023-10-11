@@ -1,4 +1,4 @@
-package com.wonderwebdev.nine.controllers;
+package com.wonderwebdev.nine.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,11 +10,8 @@ import java.util.List;
 @RestController
 public class RecipeController {
 
+    @Autowired
     private RecipeService recipeService;
-
-    private RecipeController(RecipeService recipeService) {
-        this.recipeService = recipeService;
-    }
 
     @GetMapping("/gluten-free")
     public List<Recipe> getGlutenFreeRecipes() {
@@ -39,6 +36,8 @@ public class RecipeController {
     public List<Recipe> getAllRecipes() {
         return recipeService.getAllRecipes();
     }
+
+
 
 
 }
