@@ -1,6 +1,6 @@
 package com.wonderwebdev.nine.web;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.wonderwebdev.nine.domain.Recipe;
@@ -10,34 +10,39 @@ import java.util.List;
 @RestController
 public class RecipeController {
 
-    @Autowired
     private RecipeService recipeService;
 
+    public RecipeController(RecipeService recipeService) {
+        this.recipeService = recipeService;
+    }
     @GetMapping("/gluten-free")
-    public List<Recipe> getGlutenFreeRecipes() {
-        return recipeService.getGlutenFreeRecipes();
+    public ResponseEntity<List<Recipe>> getGlutenFreeRecipes() {
+        List<Recipe> recipes = recipeService.getGlutenFreeRecipes();
+        return ResponseEntity.ok(recipes);
     }
 
     @GetMapping("/vegan")
-    public List<Recipe> getVeganRecipes() {
-        return recipeService.getVeganRecipes();
+    public ResponseEntity<List<Recipe>> getVeganRecipes() {
+        List<Recipe> recipes = recipeService.getVeganRecipes();
+        return ResponseEntity.ok(recipes);
     }
+    
     @GetMapping("/vegan-and-gluten-free")
-    public List<Recipe> getVeganAndGlutenFreeRecipes() {
-        return recipeService.getVeganAndGlutenFreeRecipes();
+    public ResponseEntity<List<Recipe>> getVeganAndGlutenFreeRecipes() {
+        List<Recipe> recipes = recipeService.getVeganAndGlutenFreeRecipes();
+        return ResponseEntity.ok(recipes);
     }
 
     @GetMapping("/vegetarian")
-    public List<Recipe> getVegetarianRecipes() {
-        return recipeService.getVegetarianRecipes();
+    public ResponseEntity<List<Recipe>> getVegetarianRecipes() {
+        List<Recipe> recipes = recipeService.getVegetarianRecipes();
+        return ResponseEntity.ok(recipes);
     }
 
     @GetMapping("/all-recipes")
-    public List<Recipe> getAllRecipes() {
-        return recipeService.getAllRecipes();
+    public ResponseEntity<List<Recipe>> getAllRecipes() {
+        List<Recipe> recipes = recipeService.getAllRecipes();
+        return ResponseEntity.ok(recipes);
     }
-
-
-
 
 }
